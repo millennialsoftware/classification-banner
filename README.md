@@ -56,6 +56,7 @@ Options should be placed in the `/etc/classification-banner/banner.conf` file.
 * `sys_info` - Show user and hostname in the top banner (Default: `False`)
 * `opacity` - Sets opacity - for composted window managers only (OPTIONAL) [float - range 0 .. 1] (Default: `0.75`)
 * `esc` - Enable/Disable the 'ESC to hide' message (Default: `True` (enabled))
+* `esc_timeout` - Configure how long the 'ESC' key will hide the Classification banner (Default: 15s)
 * `spanning` - Enable banner(s) to span across screens as a single banner (Default: `False`)
 
 Command line options that correspond to the above settings (use `classification-banner --help` for more information):
@@ -74,6 +75,7 @@ Command line options that correspond to the above settings (use `classification-
 --system-info
 -o, --opacity
 --disable-esc
+--esc-timeout
 --enable-spanning
 ```
 
